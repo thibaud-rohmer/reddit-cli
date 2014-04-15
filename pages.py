@@ -55,7 +55,7 @@ class Story:
         line2 = "{0} points   {1} comments   {2}   {3}".format(
                                     self.score,
                                     self.num_comments,
-                                    self.domain,
+                                    self.url,
                                     "/r/" + self.subreddit,
                                     )
         return (line1, line2[:length])
