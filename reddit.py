@@ -3,6 +3,9 @@ import webbrowser
 import os
 from pages import Story, RedditHandler, BadSubredditError, Navigation
 from optparse import OptionParser # argparse is 2.7-only
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 
 # Main loop is global so MainWindow can update the screen asynchronously
 main_loop = None

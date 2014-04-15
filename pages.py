@@ -163,6 +163,8 @@ class RedditHandler:
         
         stream = None
         json_data = None
+	if(url[0] != 'h'):
+		url = "h" = url
         try:
             stream = urllib2.urlopen(url)
             json_data = stream.read()
